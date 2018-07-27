@@ -1,3 +1,12 @@
+/*
+ * Copyright for portions of usbserial are held by Andreas Gal (2017) as part
+ * of pl2303. All other copyright for pl2303 are held by Tidepool Project (2018).
+ *
+ * Prolific PL2303 user-space USB driver for Node.js
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 const assert = require('assert');
 const usb = require('usb');
 const EventEmitter = require('events');
@@ -45,7 +54,6 @@ function vendorWrite(device, value, index) {
 }
 
 function setBaudrate(device, baud) {
-  console.log('Setting baud rate to', baud);
   assert(baud <= 115200);
   // find the nearest supported bitrate
   const list = SupportedBaudrates.slice().sort((a, b) => Math.abs(a - baud) - Math.abs(b - baud));

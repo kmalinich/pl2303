@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint --cache --format=node_modules/eslint-formatter-pretty ."
   },
-  "author": "Andreas Gal",
+  "author": "Gerrit Niezen <gerrit@tidepool.org>",
   "contributors": [
-    "Gerrit Niezen <gerrit@tidepool.org>"
+    "Andreas Gal"
   ],
   "license": "MIT",
   "repository": {
