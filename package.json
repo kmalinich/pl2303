@@ -1,6 +1,6 @@
 {
   "name": "pl2303",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Prolific PL2303 user-space USB to serial adapter driver based on libusb",
   "main": "index.js",
   "scripts": {
